@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http//www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script th:src="@{/js/programa.js}"></script>
+    <title>Crud con Ajax</title>
+</head>
+
+<body>
+    <div class="container">
+        <button name="" id="btnU" class="btn btn-primary mt-3">Hacer Petición de Users</button>
+        <button name="" id="postholder" class="btn btn-primary mt-3">Hacer Petición de Post</button>
+        <button name="" class="btn btn-info mt-3" id="btn">Agregar</button>
+        <div class="row  mt-2">
+            <div class="col-xs-6 col-sm-6">
+                <h1>Prueba con Ajax</h1>
+                <p id="text1">Se hace una prueba con Ajax, implementada desde el controller</p>
+
+                <div id="respuesta2">
+
+                </div>
+
+                <table class="table" id="dataTable3">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>body</th>
+                            <th>user</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pbody">
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="col-xs-6 col-sm-6">
+                <h2 id="jsondata">Contenido para la respuesta de Ajax</h1>
+                    <!--usuarios-->
+                <div id="users">
+                    
+                </div>
+                    <!--Formulario-->
+                <div id="formulario">
+                </div>
+                    <div id="dataTable2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>UserId</th>
+                                    <th>title</th>
+                                </tr>
+                            </thead>
+                            <tbody id="respuesta">
+                            </tbody>
+                        </table>
+                </div>
+</body>
+
+</html>

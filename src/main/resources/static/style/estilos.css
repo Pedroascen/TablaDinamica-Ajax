@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Lato, sans-serif; 
+}
+header{
+	height: 100px; 
+    background:#343a40;  
+    color:white;      
+}
+.table{
+    background:#343a40;
+}
+.text-center{
+	text-align: center;
+}
+#formulario{
+	color:white;
+	background:#343a40;
+	border-radius:4px;
+	height: 80px;
+	align-content: center;
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.ingre{
+	width: auto;
+	height: auto;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.boton{
+	width: auto;
+	height: auto;
+	margin-top: 30px;
+}
+.form-control{
+	width:230px
+}

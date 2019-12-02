@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<link rel="stylesheet" th:href="@{/bootstrap4/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/style/estilos.css}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Crud Personal</title>
+</head>
+<body>
+    <!--barra principal-->
+    <header>
+    <div style="height: 30px;"></div>
+        <h2 class="text-center text-light">CRUD de Persona con <span class="badge badge-success">Ajax</span></h2> 
+    </header> 
+		
+	<div class="container">
+	
+	 <!-------------------------------------------------------------------------------------------------------------------------------------------->
+	 <!-------------------------------- Formulario------------------------------------>
+	<div class="container">
+     <div class="row" id="formulario">
+     	<div class="ingre">
+          <label for="">#</label>
+          <input type="hidden" name="" id="id" class="form-control" placeholder="" aria-describedby="helpId" style="width:50px;">
+        </div>
+        <div class="ingre">
+          <label for="">Nombres</label>
+          <input type="text" name="" id="nombre" class="form-control" placeholder="" aria-describedby="helpId">
+        </div>
+        <div class="ingre">
+          <label for="">Apellidos</label>
+          <input type="text" name="" id="apellido" class="form-control" placeholder="" aria-describedby="helpId">
+        </div>
+        <div class="ingre">
+          <label for="">Edad</label>
+          <input type="text" name="" id="edad" class="form-control" placeholder="" aria-describedby="helpId">
+        </div>
+        <div class="row">
+        <label for="">Acción:</label>
+	         <div class="boton">	
+			     <button class="btn btn-info btn" role="button" id="nuevo">Agregar</button>
+            </div>
+            <div class="boton2">		
+	            <button class="btn btn-success" role="button" id="renovar">Modificar</button>
+	            <button class="btn btn-normal" role="button" id="cancelar" style="background-color: #FF8300; color: white;">Cancelar</button>
+           </div>
+		</div>	
+     </div>
+     </div>
+ <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+     <!--tabla de datos-->
+       <div class="row">
+          <div class="col-lg-12">                             
+            <table class="table table-hover table-dark table-bordered">
+                <thead class="header">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col" style="width:250px"></th>
+                  </tr>
+                </thead>
+                
+                <tbody id="tabla">
+                </tbody> 
+            </table>               
+           </div>                                        
+       </div>                  
+   </div>
+   <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+		
+				<!-- Modal para poder eliminar un registro -->
+		<div class="modal fade" id="ElimiPersona" style="text-align:center;">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          
+                       <!-- Modal Header -->
+              <div class="modal-header">
+                  <h4 class="modal-title">¿Está seguro de eliminar este registro?</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+             <!-- Modal footer -->
+              <div class="modal-footer">	    
+        <button  type="submit" class="btn btn-danger" id="eliminar" data-dismiss="modal">Si</button>
+              <button class="btn btn-success" role="button" id="cancelar" data-dismiss="modal">No</button>
+              </div>
+              </div>
+          
+     </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/programa.js}"></script>
+</body>
+</html>
